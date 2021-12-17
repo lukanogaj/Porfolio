@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('//use.fontawesome.com/releases/v5.15.3/css/all.css');
 *,
 *::before,
 *::after {
@@ -24,18 +25,24 @@ body {
 }
 
 /* Sudo class */
+
+header {
+  margin-bottom: 170px;
+}
 .logo {
+  position: absolute;
+  left: 100px;
+  top: 25px;
   display: block;
-  background-color: yellow;
-  width: 140px;
-  height: 140px;
-  display: inline-block;
-  padding: 6rem 2rem;
-  letter-spacing: 0.3rem;
-  font-weight: bolder;
   font-size: 2rem;
   color: #d8d8d8;
   cursor: pointer;
+}
+
+.logo,
+img {
+  width: 50px;
+  height: 50px;
 }
 
 a.icon {
@@ -85,13 +92,12 @@ h1 {
 }
 
 header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .navbar {
-  /* display: none; */
-  overflow: hidden;
   position: fixed;
   left: 65%;
   top: 0.3rem;
@@ -125,6 +131,20 @@ ul li a:hover {
   color: red;
 }
 
+/* Social icons menu bar */
+.social-icons {
+  display: flex;
+  width: 400px;
+}
+
+.social-icons a {
+  display: block;
+  text-align: center;
+  height: 10px;
+  padding: 16px;
+  color: #fff;
+  font-size: 40px;
+}
 .btn-container {
   padding-top: 6rem;
   text-decoration: none;
@@ -170,10 +190,10 @@ ul li a:hover {
 
 #menuicon {
   position: absolute;
-  display: none;
+  /* display: none; */
   font-size: 2.9rem;
-  left: 1650px;
-  bottom: 780px;
+  /* left: 1650px;
+  bottom: 780px; */
   width: 4rem;
   cursor: pointer;
 }
