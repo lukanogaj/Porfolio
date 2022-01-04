@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/face.css" />
     <link
       rel="stylesheet"
       media="screen and (max-width:768px)"
@@ -23,10 +23,16 @@
               <img src="./images/logo.png" alt="logo" />
             </div>
             <nav class="navbar">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Contact</a></li>
+              <ul class="navbar-links">
+                <li class="navbar-link">
+                  <a class="navbar-link-item" href="#">Home</a>
+                </li>
+                <li class="navbar-link">
+                  <a class="navbar-link-item" href="#about">About</a>
+                </li>
+                <li class="navbar-link">
+                  <a class="navbar-link-item" href="#">Contact</a>
+                </li>
                 <!-- <li>
                   <a href="#"
                     ><div id="menuicon"><i class="fas fa-bars"></i></div
@@ -40,29 +46,42 @@
 
           <!-- Div with all social media -->
           <div class="social-icons">
-            <ul>
-              <li>
+            <ul class="social-links">
+              <li class="social-link">
                 <a
+                  class="social-link-item"
                   href="https://www.facebook.com/Poezja-i-proza-z-emigracji-1778237195750743"
                   target="blank"
                   class="facebook"
                   ><i class="fab fa-facebook-square"></i
                 ></a>
               </li>
-              <li>
-                <a href="#" target="blank" class="twitter"
+              <li class="social-link">
+                <a
+                  class="social-link-item"
+                  href="#"
+                  target="blank"
+                  class="twitter"
                   ><i class="fab fa-twitter-square"></i
                 ></a>
               </li>
 
-              <li>
-                <a href="#" target="blank" class="linkedin"
+              <li class="social-link">
+                <a
+                  class="social-link-item"
+                  href="#"
+                  target="blank"
+                  class="linkedin"
                   ><i class="fab fa-linkedin"></i
                 ></a>
               </li>
 
-              <li>
-                <a href="#" target="blank" class="youtube"
+              <li class="social-link">
+                <a
+                  class="social-link-item"
+                  href="#"
+                  target="blank"
+                  class="youtube"
                   ><i class="fab fa-github-square"></i
                 ></a>
               </li>
@@ -77,9 +96,10 @@
 
             <!-- Div with small introductions -->
             <div class="me-intro">
+              <h2>- Introduction</h2>
               <p class="about-me">
-                < Hi, I'm Lukasz Nogaj. I'm a Frontend JavaScript Developer,
-                based in London working mainly with React.>
+                < Hi, I'm <span>Lukasz</span>. I'm a Frontend JavaScript
+                Developer, based in London working mainly with React.>
               </p>
             </div>
           </div>
