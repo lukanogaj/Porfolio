@@ -111,7 +111,7 @@ header {
   z-index: 1000;
 }
 
-ul {
+.navbar ul {
   font-size: 2.2rem;
   display: flex;
   position: relative;
@@ -122,38 +122,49 @@ ul {
 
 /* Scrolling to the right line */
 
-ul li {
-  padding: 2.2rem 2.2rem;
+.navbar ul li {
+  top: 0;
+  padding: 2.2rem 2.5rem;
   font-size: 2.2rem;
   color: #d8d8d8;
   letter-spacing: 0.2rem;
   cursor: pointer;
   z-index: 1000;
+  /* transform: translateY(-3px);
+  transition: transform 200ms ease-in-out; */
 }
 
-ul li a {
-  text-decoration: none;
+.navbar ul li a {
   color: #d8d8d8;
+  text-decoration: underline 0.15em #c70600;
+  transform: translateY(-3px);
+  transition: transform 200ms ease-in-out;
 }
 
-ul li a:hover {
-  color: red;
-  transition: all 0.5s ease-in;
+.navbar ul li a:hover {
+  color: green;
 }
 
 /* Social icons menu bar */
 .social-icons {
   display: flex;
+  justify-content: space-between;
   width: 400px;
 }
 
+.social-icons ul li {
+  display: inline-block;
+  padding: 14px;
+}
+
 .social-icons a {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  height: 10px;
-  padding: 10px;
-  color: #fff;
+  color: red;
   font-size: 30px;
+  text-decoration: none;
+  transition: all 200ms, ease;
 }
 
 /* Div with the h1 and my small descrpitions */
@@ -206,19 +217,6 @@ ul li a:hover {
   color: #000;
   transition: all 1s ease;
 }
-
-/* #menuicon {
-  position: absolute;
-  font-size: 2.9rem;
-  width: 4rem;
-  cursor: pointer;
-} */
-
-/* #menuicon:hover {
-  color: red;
-  z-index: 3;
-  transition: all 1s ease;
-} */
 
 /* Media Query for smartphones  the all have width below 500*/
 
