@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,900;1,300&display=swap');
 @import url('//use.fontawesome.com/releases/v5.15.3/css/all.css');
 *,
 *::before,
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background-color: #333646;
+  background-color: #272936;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -30,10 +30,7 @@ header {
   margin-bottom: 170px;
 }
 .logo {
-  position: absolute;
-  left: 100px;
-  top: 25px;
-  display: block;
+  display: inline-block;
   font-size: 2rem;
   color: #d8d8d8;
   cursor: pointer;
@@ -41,8 +38,7 @@ header {
 
 .logo,
 img {
-  width: 50px;
-  height: 50px;
+  width: 90px;
 }
 
 a.icon {
@@ -60,7 +56,7 @@ h1 span {
 
 h1 {
   font-size: 5rem;
-  width: 36%;
+  width: 56%;
   padding-top: 3rem;
   line-height: 1.7;
   font-weight: 500;
@@ -80,38 +76,51 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.container {
+/* removing the scrolbars */
+::-webkit-scrollbar {
+  display: none;
+}
+/* mains divs  */
+.main-section {
   height: 100vh;
   width: 100vw;
+  margin: auto;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 90vw;
+  margin: auto;
 }
 
 .home-section {
-  width: 100vw;
-  height: 100vh;
-  padding: 10rem;
+  padding-top: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 .navbar {
-  position: fixed;
-  left: 65%;
-  top: 0.3rem;
   z-index: 1000;
 }
 
 ul {
   font-size: 2.2rem;
   display: flex;
-  /* position: fixed; */
+  position: relative;
   margin: 1.2rem;
   padding: 1.8rem 1.2rem;
   list-style: none;
 }
+
+/* Scrolling to the right line */
 
 ul li {
   padding: 2.2rem 2.2rem;
@@ -129,6 +138,7 @@ ul li a {
 
 ul li a:hover {
   color: red;
+  transition: all 0.5s ease-in;
 }
 
 /* Social icons menu bar */
@@ -141,10 +151,18 @@ ul li a:hover {
   display: block;
   text-align: center;
   height: 10px;
-  padding: 16px;
+  padding: 10px;
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
 }
+
+/* Div with the h1 and my small descrpitions */
+
+.me-details {
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn-container {
   padding-top: 6rem;
   text-decoration: none;
@@ -175,33 +193,32 @@ ul li a:hover {
   text-decoration: none;
   color: #fff;
 }
-.blue-button {
-  background-color: blue;
+.view-button {
+  background-color: #b4b4b4;
 }
 
-.black-button {
-  background-color: #000;
-  border: 0.5px solid #fff;
+.touch-button {
+  background-color: #c70600;
+  /* border: 0.2px solid #fff; */
 }
 
 .btn:hover a {
-  color: red;
+  color: #000;
+  transition: all 1s ease;
 }
 
-#menuicon {
+/* #menuicon {
   position: absolute;
-  /* display: none; */
   font-size: 2.9rem;
-  /* left: 1650px;
-  bottom: 780px; */
   width: 4rem;
   cursor: pointer;
-}
+} */
 
-#menuicon:hover {
+/* #menuicon:hover {
   color: red;
   z-index: 3;
-}
+  transition: all 1s ease;
+} */
 
 /* Media Query for smartphones  the all have width below 500*/
 
