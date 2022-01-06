@@ -1,12 +1,10 @@
 /* Sudo class */
 
-header {
-  margin-bottom: 170px;
-}
 .logo {
   display: inline-block;
   font-size: 2rem;
   color: #d8d8d8;
+  padding-bottom: 3rem;
   cursor: pointer;
 }
 
@@ -47,68 +45,64 @@ h1 {
   letter-spacing: 0.3rem;
   font-weight: 600;
   line-height: 4.5rem;
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.my-logo {
+  width: 50%;
+  margin-top: 7rem;
+}
+
+.dot {
+  font-size: 6rem;
+  color: #c70600;
 }
 
 /* mains divs  */
-.main-section {
-  height: 100vh;
-  width: 100vw;
-  margin: auto;
-}
-.container {
+
+/* Navbar with the paragraph */
+
+.navbar {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
-  width: 90vw;
-  margin: auto;
-}
-
-.home-section {
-  padding-top: 5rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10rem;
-}
-
-/* UL */
-.navbar-links {
-  font-size: 2.2rem;
-  display: flex;
-  margin: 1.2rem;
-  padding: 1.8rem 1.2rem;
   list-style: none;
+  width: 50%;
+  margin: 50px 0 50px 0;
 }
 
-/* UL li */
-
-.navbar-link {
-  padding: 2.2rem 2.5rem;
-  font-size: 2.2rem;
-  color: #d8d8d8;
-  letter-spacing: 0.2rem;
-  cursor: pointer;
-  z-index: 1000;
+.nav-item {
+  position: relative;
 }
 
-/* UL a */
-.navbar-link-item {
-  color: #d8d8d8;
-  text-decoration: underline 0.15em #c70600;
-  transform: translateY(10px);
+.nav-item::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  background-color: darkgrey;
+  transform: scaleX(0.05);
+  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
 }
 
-.navbar-link-item:hover {
-  transform: translateY(-3px);
+.nav-item > a {
+  font-size: 2rem;
+  display: block;
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 0 30px 0 30px;
+  color: #b4b4b4;
   transition: transform 200ms ease-in-out;
 }
 
+.nav-item:hover > a {
+  transform: translateY(-3px);
+}
+
+.nav-item:hover::before {
+  transform: scaleX(1);
+  background-color: #c70600;
+}
 /* Social icons menu bar */
 .social-icons {
   display: flex;
@@ -124,12 +118,16 @@ header {
 }
 
 .social-link-item {
-  display: flex;
-  justify-content: space-between;
   text-align: center;
   font-size: 30px;
   color: #fff;
   text-decoration: none;
+  transform: translateY(-10px);
+  transition: transform 200ms ease-in-out;
+}
+
+.social-link-item i {
+  transform: translateY(-10px);
   transition: transform 200ms ease-in-out;
 }
 

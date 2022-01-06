@@ -10,41 +10,17 @@
       media="screen and (max-width:768px)"
       href="./css/mobile.css"
     />
-    <title>Lukasz Nogaj</title>
+    <title>Lukasz Nogaj <span class="dot">.</span></title>
   </head>
   <body>
-    <div class="main-section">
-      <div class="container">
-        <!-- Menu right corner , menu inside the division -->
-        <div class="home-section">
-          <!-- top left corner logo with the menu -->
-          <header>
-            <div class="logo">
-              <img src="./images/logo.png" alt="logo" />
-            </div>
-            <nav class="navbar">
-              <ul class="navbar-links">
-                <li class="navbar-link">
-                  <a class="navbar-link-item" href="#">Home</a>
-                </li>
-                <li class="navbar-link">
-                  <a class="navbar-link-item" href="#about">About</a>
-                </li>
-                <li class="navbar-link">
-                  <a class="navbar-link-item" href="#">Contact</a>
-                </li>
-                <!-- <li>
-                  <a href="#"
-                    ><div id="menuicon"><i class="fas fa-bars"></i></div
-                  ></a>
-                </li> -->
-              </ul>
-            </nav>
-            <!-- <div id="menuicon"><i class="fas fa-bars"></i></div> -->
-          </header>
+    <div class="container">
+      <!--  The header will included Logo , navbar and paragraph -->
+      <header>
+        <div class="my-logo">
+          <div class="logo">
+            <img src="./images/logo.png" alt="logo" />
+          </div>
           <h2 class="myName">Lukasz Nogaj<span class="dot">.</span></h2>
-
-          <!-- Div with all social media -->
           <div class="social-icons">
             <ul class="social-links">
               <li class="social-link">
@@ -87,37 +63,50 @@
               </li>
             </ul>
           </div>
+        </div>
+        <!-- div with menu and paragraph -->
+        <div class="hero">
+          <ul class="navbar">
+            <li class="nav-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
 
-          <!-- Section included h1 and paragraph with short description of me -->
-          <div class="me-details">
-            <h1>
-              Front End Developer & React Native<span> based</span> in London
-            </h1>
-
-            <!-- Div with small introductions -->
-            <div class="me-intro">
-              <h2>- Introduction</h2>
-              <p class="about-me">
-                < Hi, I'm <span>Lukasz</span>. I'm a Frontend JavaScript
-                Developer, based in London working mainly with React.>
-              </p>
-            </div>
-          </div>
-
-          <!-- Two bottom buttons with anchors  in bigger division-->
-
-          <div class="btn-container">
-            <button class="btn view-button">
-              <a href="#" class="btn-href">View My Work</a>
-            </button>
-            <button class="btn touch-button">
-              <a href="#" class="btn-href">Get in Touch</a>
-            </button>
+          <div class="me-intro">
+            <h2>- Introduction</h2>
+            <p class="about-me">
+              < Hi, I'm <span>Lukasz</span>. I'm a Frontend JavaScript
+              Developer, based in London working mainly with React.>
+            </p>
           </div>
         </div>
+      </header>
 
-        <!-- DIV ABOUT ME -->
+      <!-- Section included h1 and paragraph with short description of me -->
+      <div class="me-details">
+        <h1>Front End Developer & React Native<span> based</span> in London</h1>
+
+        <!-- Div with small introductions -->
       </div>
+
+      <!-- Two bottom buttons with anchors  in bigger division-->
+
+      <div class="btn-container">
+        <button class="btn view-button">
+          <a href="#" class="btn-href">View My Work</a>
+        </button>
+        <button class="btn touch-button">
+          <a href="#" class="btn-href">Get in Touch</a>
+        </button>
+      </div>
+
+      <!-- DIV ABOUT ME -->
     </div>
   </body>
 </html>
