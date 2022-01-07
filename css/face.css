@@ -1,14 +1,5 @@
 /* Sudo class */
 
-a.icon {
-  display: inline-block;
-  position: fixed;
-  font-size: 3rem;
-  color: #d8d8d8;
-  right: 1%;
-  cursor: pointer;
-}
-
 h1 span {
   color: #767676;
 }
@@ -133,11 +124,13 @@ img {
 /* Div with the h1 and my small descrpitions */
 
 /* Paragraph with the small descriptions */
+.me-intro {
+}
+
 .about-me {
   width: 600px;
   height: 100px;
   font-size: 2rem;
-  z-index: -200;
 }
 
 /* Media Query for smartphones  the all have width below 500*/
