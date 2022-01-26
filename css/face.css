@@ -17,6 +17,20 @@ h1 {
   z-index: 3;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #767676;
+  letter-spacing: 0.3rem;
+  padding-bottom: 2rem;
+}
+
+/* Divs in header */
+.my-logo {
+  width: 50%;
+  margin-top: 7rem;
+}
+
 .myName {
   font-size: 4rem;
   color: #767676;
@@ -24,11 +38,6 @@ h1 {
   font-weight: 600;
   line-height: 4.5rem;
   padding-bottom: 1.5rem;
-}
-
-.my-logo {
-  width: 50%;
-  margin-top: 7rem;
 }
 
 .logo {
@@ -48,16 +57,22 @@ img {
   color: #c70600;
 }
 
+/* Hero div with navbar */
+.hero {
+  height: 283px;
+  padding-top: 3rem;
+  padding-left: 11rem;
+}
+
 /* mains divs  */
 
 /* Navbar with the paragraph */
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
-  width: 50%;
-  margin: 50px 0 50px 0;
+  width: 80%;
 }
 
 .nav-item {
@@ -79,8 +94,7 @@ img {
   font-size: 2rem;
   display: block;
   text-decoration: none;
-  font-size: 3rem;
-  padding: 0 30px 0 30px;
+  font-size: 2.8rem;
   color: #b4b4b4;
   transition: transform 200ms ease-in-out;
 }
@@ -109,7 +123,7 @@ img {
 
 .social-link-item {
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   color: #fff;
   text-decoration: none;
   transform: translateY(-10px);
@@ -125,6 +139,7 @@ img {
 
 /* Paragraph with the small descriptions */
 .me-intro {
+  margin-top: 5rem;
 }
 
 .about-me {
