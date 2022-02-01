@@ -116,9 +116,7 @@ img {
 
 .social-link {
   display: inline-block;
-  padding: 14px;
-  transform: translateY(-5px);
-  transition: transform 6s ease-in-out;
+  padding-right: 16px;
 }
 
 .social-link-item {
@@ -126,13 +124,11 @@ img {
   font-size: 28px;
   color: #fff;
   text-decoration: none;
-  transform: translateY(-10px);
-  transition: transform 200ms ease-in-out;
 }
 
-.social-link-item i {
-  transform: translateY(-10px);
-  transition: transform 200ms ease-in-out;
+.social-link-item :hover {
+  transform: translateY(-5px);
+  transition: transform 300ms ease-in-out;
 }
 
 /* Div with the h1 and my small descrpitions */
@@ -147,6 +143,11 @@ img {
   height: 100px;
   font-size: 2rem;
 }
+
+/* Div with main paragraph */
+/* .me-details {
+  padding-left: 16rem;
+} */
 
 /* Media Query for smartphones  the all have width below 500*/
 

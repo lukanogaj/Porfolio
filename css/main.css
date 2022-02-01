@@ -28,6 +28,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: auto;
+  padding-left: 16rem;
 }
 
 header {
@@ -35,9 +36,8 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 50rem;
-  /* background-color: #3f4152; */
   padding-right: 20rem;
-  padding-left: 20rem;
+  /* padding-left: 20rem; */
 }
 
 ::-webkit-scrollbar {
@@ -49,6 +49,7 @@ header {
 /* Buttons container */
 .btn-container {
   padding-top: 6rem;
+  /* padding-left: 16rem; */
 }
 
 .btn {
