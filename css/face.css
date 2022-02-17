@@ -145,11 +145,22 @@ img {
   font-size: 2.5rem;
 }
 
-/* Div with main paragraph */
-/* .me-details {
-  padding-left: 16rem;
-} */
-
+/* Hidden button with the menu */
+.button {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: 999;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #252734;
+  transition: color 200ms ease-in-out;
+  cursor: pointer;
+}
 /* Media Query for smartphones  the all have width below 500*/
 
 @media (max-width: 768px) {
