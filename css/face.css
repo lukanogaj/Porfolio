@@ -161,6 +161,36 @@ img {
   transition: color 200ms ease-in-out;
   cursor: pointer;
 }
+
+.new-button {
+  left: 20px;
+  top: 20px;
+}
+
+.button-open {
+  color: white;
+}
+
+.drawer {
+  width: 400px;
+  height: 100%;
+  background-color: #252734;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(400px);
+  transition: transform 200ms ease-in-out;
+}
+
+.new-drawer {
+  left: 0;
+  top: 0;
+  transform: translateX(-400px);
+}
+
+.drawer-open {
+  transform: translateX(0);
+}
 /* Media Query for smartphones  the all have width below 500*/
 
 @media (max-width: 768px) {
