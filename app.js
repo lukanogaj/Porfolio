@@ -2,7 +2,7 @@ const button = document.querySelector('.button');
 const drawer = document.querySelector('.drawer');
 
 //Hidden class , calling out by javascript
-const newButton = document.querySelector('.newButton');
+const newButton = document.querySelector('.new-button');
 const newDrawer = document.querySelector('.new-drawer');
 
 const drawerControl = () => {
